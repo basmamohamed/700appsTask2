@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp2"
+    android:background="@drawable/bk_signup"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Feeling lazy?"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account by"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_facebook"
+            android:textColor="#000"
+            android:text="Facebook" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_linkedin"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:text="Linked in"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="2"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="2"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up with email"
+        android:textColor="#fff"
+        android:background="#02d4b9"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goToRegister"/>
+</LinearLayout>
